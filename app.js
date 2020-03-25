@@ -83,6 +83,6 @@ if(temperature < 68){
     console.log('temperature is perfect');
 } else if(temperature >= 73 && temperature <= 76){
     console.log('temprature is warm');
-} else if(temperature > 76){
+} else {
     console.log('temperature is too hot');
 }
