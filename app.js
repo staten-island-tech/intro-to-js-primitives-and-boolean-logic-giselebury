@@ -50,9 +50,9 @@ let future = year * 2;
 
  //red, green, yellow
 let light = 'yellow';
- if(light == 'green'){
+ if(light === 'green'){
      console.log('go');
- } else if(light == 'yellow'){
+ } else if(light === 'yellow'){
      console.log('caution!');
  } else{
      console.log('stop');
