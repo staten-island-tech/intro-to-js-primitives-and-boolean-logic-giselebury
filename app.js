@@ -49,7 +49,7 @@ let future = year * 2;
  */
 
  //red, green, yellow
-let light = 'yellow';
+/* let light = 'yellow';
  if(light === 'green'){
      console.log('go');
  } else if(light === 'yellow'){
@@ -57,13 +57,13 @@ let light = 'yellow';
  } else{
      console.log('stop');
  }
- 
+  */
 
 
  //Kristy and Bao Bao are making coffee. If one of them is lactose intolerant than
 //they should get milk and almond milk. If both of them are lactose intolerant then
 //they will only get almond milk. Otherwise they will only get milk for their coffee.
-let kristyIntolerant = true;
+/* let kristyIntolerant = true;
 let baoBaoIntolerant = false;
 
 if(kristyIntolerant === true && baoBaoIntolerant === true){
@@ -85,4 +85,81 @@ if(temperature < 68){
     console.log('temprature is warm');
 } else {
     console.log('temperature is too hot');
+} */
+
+/* function test() {
+    console.log('Im a function');
 }
+test();
+ */
+
+/*  const add = function(x,y){  ///cannot redefine const 
+    return x + y;   //return ends the function
+ }
+
+console.log(add(10,20)); */
+
+/* const hello = function(){
+    console.log('Hello');
+};
+const bye = function(){
+    console.log('Bye');
+};
+const hiBye = function(){
+    hello();
+    bye();
+    hello();
+    bye();
+};
+hiBye(); */
+
+//const name = 'Thurushi'; // global variable or global space
+
+/* function displayName(){
+    const name = 'Kelly';  //local or function scope, call variable in function
+    function sun(){
+        const name2 = 'Jacob';
+        console.log(name2); //innter function has access to outer function
+    }
+    return sun();
+}
+displayName(); */
+
+/* function displayName(){
+    const name = 'Kelly';  
+    function sun(){
+        console.log(name); 
+    }
+    return sun;
+}
+const myFunc = displayName();
+myFunc();
+//closure */
+
+///Arrays
+
+/* const names = ['Aarthi', 'Vicky', 'Vincent', 'Doyle', 'Kelly'];
+names.forEach(el => console.log(el)); */
+
+/* ///spread operator
+const numbers = [1, 2, 3];
+const add = function(x, y, z){
+    return x + y + z;
+};
+console.log(add(...numbers)); */
+
+let students = ["Riya", "Omor", "Alan", "Jaiyu", "Michael", "Lisa",
+"Richard"];
+//Using the above array filter out all students whose names contain
+//less than 5 characters
+const newArr = students.filter(students => students.length > 5);
+console.log(newArr);
+
+//Using the above array check to see if the array “includes” “junshen”
+const includes = students.includes('junshen');
+console.log(includes);
+//Write a seperate function to check if “Alan” or “Savva” were included
+//in “some” of the array
+const some = (students) => students === 'Alan' || 'Savva';
+console.log(students.some(some));
+//USE MDN to find the appropriate array methods
