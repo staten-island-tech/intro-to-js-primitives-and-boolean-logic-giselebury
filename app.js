@@ -147,7 +147,7 @@ const add = function(x, y, z){
     return x + y + z;
 };
 console.log(add(...numbers)); */
-
+/* 
 let students = ["Riya", "Omor", "Alan", "Jaiyu", "Michael", "Lisa",
 "Richard"];
 //Using the above array filter out all students whose names contain
@@ -162,4 +162,57 @@ console.log(includes);
 //in “some” of the array
 const some = (students) => students === 'Alan' || 'Savva';
 console.log(students.some(some));
-//USE MDN to find the appropriate array methods
+//USE MDN to find the appropriate array methods */
+
+///objects
+/* const Riya = {
+    name : 'Riya',
+    dob: 2003,
+    graduted: false,
+    age: function() {
+        console.log(this);
+        return 2020 - this.dob;
+    }
+};
+ */
+//with an arrow function: =>, don't need to use return
+
+/* const homer = {
+    name: 'Homer',
+    age: 32,
+    family:{
+        wife:{
+            name: 'Marge',
+            age: 32,
+        },
+        son:{
+            name: 'Bart',
+            age: 10
+        }
+    },
+    pets: ['cat', 'dog']
+};
+
+homer.family.daughter = {
+    name: 'Lisa',
+    age: 8
+}; */
+
+///destructuring
+const Riya = {
+    name : 'Riya',
+    dob: 2003,
+    graduted: false,
+    age: function() {
+        console.log(this);
+        return 2020 - this.dob;
+    }
+};
+
+/* const { name,age } = Riya; */
+
+/* const Angel = Riya; /// this is anot a COPY it is a reference to
+Angel.name = 'Angel'; */
+
+const Angel = {}
+Angel.dob = Riya.dob;
